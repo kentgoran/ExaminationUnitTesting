@@ -2,7 +2,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using EmployeeLibrary;
 using System.Collections.Generic;
-using System.IO;
 
 namespace EmployeeLibraryTest
 {
