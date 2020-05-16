@@ -196,6 +196,7 @@ namespace EmployeeInformation
             // 
             // txtAdress
             // 
+            this.txtAdress.AcceptsReturn = true;
             this.txtAdress.Location = new System.Drawing.Point(122, 130);
             this.txtAdress.Multiline = true;
             this.txtAdress.Name = "txtAdress";
