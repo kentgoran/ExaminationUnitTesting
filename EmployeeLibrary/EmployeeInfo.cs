@@ -12,7 +12,7 @@ namespace EmployeeLibrary
         private string name;
         private string adress;
         private int age;
-        private Regex empNumMatcher = new Regex("[0-9]{4}");
+        private Regex empNumMatcher = new Regex("^[0-9]{4}$");
 
         public string EmpNum
         {
@@ -22,7 +22,7 @@ namespace EmployeeLibrary
             }
             set
             {
-                if (empNumMatcher.IsMatch(value) && value.Length == 4)
+                if (empNumMatcher.IsMatch(value))
                 {
                     empNum = value;
                 }

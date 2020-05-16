@@ -114,8 +114,8 @@ namespace EmployeeLibrary
         /// <returns>Boolean. True if valid, else fail</returns>
         public bool EmployeeNumberIsValid(string employeeNumber)
         {
-            Regex empNumMatcher = new Regex("[0-9]{4}");
-            if (!empNumMatcher.IsMatch(employeeNumber) || employeeNumber.Length != 4)
+            Regex empNumMatcher = new Regex("^[0-9]{4}$");
+            if (!empNumMatcher.IsMatch(employeeNumber))
             {
                 return false;
             }
