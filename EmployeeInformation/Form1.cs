@@ -166,6 +166,7 @@ namespace EmployeeInformation
                         multiListBox.Items.Add(emp);
                     }
                     multiListBox.SelectedIndex = 0;
+                    multiListBox.Focus();
                 }
                 else if (employeesFound.Count == 1)
                 {
